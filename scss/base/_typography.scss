@@ -1,0 +1,13 @@
+:root {
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 16px;
+}
+
+.main-title {
+	text-transform: uppercase;
+
+	span {
+		font-weight: 300;
+		color: var(--red-desaturated);
+	}
+}
