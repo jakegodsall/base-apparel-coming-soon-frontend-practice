@@ -53,4 +53,8 @@ form {
 		margin-left: 20px;
 		display: none;
 	}
+
+	@media screen and (max-width: 400px) {
+		width: 80%;
+	}
 }
