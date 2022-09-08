@@ -11,7 +11,10 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-color: var(--red-desaturated);
-
 	display: flex;
 	justify-content: center;
+
+	@media screen and (max-width: 650px) {
+		background-color: #fff;
+	}
 }
