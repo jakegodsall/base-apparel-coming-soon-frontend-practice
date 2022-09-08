@@ -10,17 +10,24 @@ const onSumbitHandler = event => {
 
 	const emailAddress = event.target.elements.email.value;
 
+	const errorMsg = document.querySelector('.error-message');
+	const errorIcon = document.querySelector('.error-icon');
+
+	// if email is not valid, render error message
 	if (!isEmail(emailAddress)) {
 		// show error message
-		const errorMsg = document.querySelector('.error-message');
 		errorMsg.innerText = 'Please provide a valid email';
 		errorMsg.style.display = 'block';
 
 		// show error icon
-		const errorIcon = document.querySelector('.error-icon');
 		errorIcon.style.display = 'block';
 
 		console.log(errorMsg);
+	} else {
+		if (errorMsg.style.display == 'block') {
+			errorMsg.style.display = 'none';
+			errorIcon.style.display = 'none';
+		}
 	}
 };
 
