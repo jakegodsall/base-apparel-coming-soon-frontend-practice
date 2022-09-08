@@ -41,40 +41,61 @@
 	<body>
 		<div class="container">
 			<div class="container__content">
-				<img src="images/logo.svg" />
-				<h1 class="main-title"><span>We're</span> coming soon</h1>
-				<p class="container__main-text-content">
-					Hello fellow shoppers! We're currently building our new
-					fashion store. Add your email below to stay up-to-date with
-					announcements and our launch deals.
-				</p>
-				<form>
-					<input
-						type="text"
-						name="email"
-						placeholder="Email Address"
-						id="email"
+				<div class="content-box">
+					<img
+						class="logo"
+						src="images/logo.svg"
+						alt="Base Apparel Logo"
 					/>
-					<button
-						id="btn"
-						type="submit"
-					>
-						<img src="images/icon-arrow.svg" />
-					</button>
-				</form>
+					<h1 class="main-title"><span>We're</span> coming soon</h1>
+					<p class="main-text-content">
+						Hello fellow shoppers! We're currently building our new
+						fashion store. Add your email below to stay up-to-date
+						with announcements and our launch deals.
+					</p>
+					<form>
+						<input
+							type="text"
+							name="email"
+							placeholder="Email Address"
+							id="email"
+						/>
+						<button
+							class="btn"
+							id="btn"
+							type="submit"
+						>
+							<img
+								src="images/icon-arrow.svg"
+								alt="Arrow Icon"
+							/>
+						</button>
+						<img
+							class="error-icon"
+							src="images/icon-error.svg"
+							alt="Error Icon"
+						/>
+						<small class="error-message"
+							>Please provide a valid email address</small
+						>
+					</form>
+
+					<footer>
+						<p class="attribution">
+							Challenge by
+							<a
+								href="https://www.frontendmentor.io?ref=challenge"
+								target="_blank"
+								>Frontend Mentor</a
+							>. Coded by
+							<a href="https://github.com/jakegodsall"
+								>Jake Godsall</a
+							>.
+						</p>
+					</footer>
+				</div>
 			</div>
 			<div class="container__image"></div>
 		</div>
-
-		<footer>
-			<p class="attribution">
-				Challenge by
-				<a
-					href="https://www.frontendmentor.io?ref=challenge"
-					target="_blank"
-					>Frontend Mentor</a
-				>. Coded by <a href="#">Your Name Here</a>.
-			</p>
-		</footer>
 	</body>
 </html>

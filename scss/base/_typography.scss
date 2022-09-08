@@ -11,3 +11,10 @@
 		color: var(--red-desaturated);
 	}
 }
+
+a,
+a:visited,
+a:active {
+	text-decoration: none;
+	font-weight: bolder;
+}
