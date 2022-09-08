@@ -66,6 +66,12 @@ form {
 	@media screen and (max-width: 650px) {
 		width: 80%;
 
+		input {
+			&:focus {
+				outline: none;
+			}
+		}
+
 		.btn {
 			padding-inline: 25px;
 		}
